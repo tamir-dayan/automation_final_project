@@ -8,6 +8,19 @@
 - [Graphhopper API Testing](#graphhopper-api-testing)
 - [Ultimateqa UI Tests](#ultimateqa-ui-tests)
 
+### Installation
+
+1. Clone this repository.
+
+```bash
+git clone https://github.com/tamir-dayan/automation_final_project
+```
+
+2. Install the required packages.
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Questions
 
@@ -147,22 +160,12 @@ Make sure you have the following tools installed:
 * Pytest
 * Allure Framework
 * Graphhopper Local Server
+* Java
 
 ### Installation
 
-1. Clone this repository.
-
-```bash
-git clone https://github.com/tamir-dayan/graphhopper-api-testing.git
-```
-
-2. Install the required packages.
-
-```bash
-cd graphhopper-api-testing
-pip install -r requirements.txt
-```
-
+1. Clone this repository (see above).
+2. Install the required packages (see above).
 3. Download Graphhopper local server files and run the server.
 
 ```bash
@@ -195,13 +198,6 @@ allure serve ./report
 
 * `test_get_route_exists`: This test gets the route between two points and verifies that a path exists between them.
 
-### Contributing
-
-Contributions are welcome! If you find a bug or want to suggest a new feature, please [open an issue](https://github.com/your-username/graphhopper-api-testing/issues).
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Ultimateqa UI Tests
 
@@ -249,6 +245,3 @@ This test fills in all the fields (name, email, message and captcha math exercis
 
 * @tamir.dayan
 
-# test_automation
-# test_automation
-# test_automation
