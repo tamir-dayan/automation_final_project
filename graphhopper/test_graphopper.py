@@ -39,9 +39,7 @@ API_QUERY = {
     "alternative_route.max_share_factor": "0.6",
     "key": "a395ba03-722e-476a-bec8-4642beb0e763"
 }
-DOWNLOAD_GRAPHHOPPER_LOCAL_SERVER_FILES_TERMINAL_COMMAND = """wget https://repo1.maven.org/maven2/com/graphhopper
-/graphhopper-web/7.0/graphhopper-web-7.0.jar https://raw.githubusercontent.com/graphhopper/graphhopper/7.x/config
--example.yml http://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf """
+DOWNLOAD_GRAPHHOPPER_LOCAL_SERVER_FILES_TERMINAL_COMMAND = """wget https://repo1.maven.org/maven2/com/graphhopper/graphhopper-web/7.0/graphhopper-web-7.0.jar https://raw.githubusercontent.com/graphhopper/graphhopper/7.x/config-example.yml http://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf """
 SETUP_GRAPHHOPPER_LOCAL_SERVER_TERMINAL_COMMAND = """java -D"dw.graphhopper.datareader.file=berlin-latest.osm.pbf" -jar graphhopper*.jar server config-example.yml"""
 STATUS_400_ONE_POINT_ERROR_MESSAGE = r'{"message":"At least 2 points have to be specified, but was:1","hints":[{"message":"At least 2 points have to be specified, but was:1","details":"java.lang.IllegalArgumentException"}]}'
 MIN_SPEED_IN_KM_H = 30

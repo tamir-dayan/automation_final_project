@@ -1,4 +1,4 @@
-from automation_final_project.questions.pokemon_damage_calculator import player, pokemon_action
+from questions.pokemon_damage_calculator import player, pokemon_action
 
 
 def get_player_details(player_order):

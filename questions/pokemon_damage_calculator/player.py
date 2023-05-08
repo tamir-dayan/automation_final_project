@@ -1,4 +1,4 @@
-from automation_final_project.questions.pokemon_damage_calculator import pokemon
+from questions.pokemon_damage_calculator import pokemon
 
 
 class Player:

@@ -167,6 +167,7 @@ Make sure you have the following tools installed:
 1. Clone this repository (see above).
 2. Install the required packages (see above).
 3. Download Graphhopper local server files and run the server.
+4. Note: This step should run as part of test, If not working - run this manually
 
 ```bash
 wget https://repo1.maven.org/maven2/com/graphhopper/graphhopper-web/7.0/graphhopper-web-7.0.jar https://raw.githubusercontent.com/graphhopper/graphhopper/7.x/config-example.yml http://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf 
@@ -223,7 +224,19 @@ To run the tests, follow these steps:
 
 2. Install the required dependencies using the command: `pip install -r requirements.txt`
 
-3. Run the tests using the command: `pytest test_ultimateqa.py`
+### Usage
+To run the tests, execute the following command:
+
+```bash
+pytest test_ultimateqa.py --alluredir=./report
+```
+
+To generate the report, run:
+
+```bash
+allure serve ./report
+```
+
 
 ### Test Cases
 
@@ -240,6 +253,7 @@ This test verifies that all Facebook buttons' Links in "Section of Social Media 
 #### Section of Random Stuff: Submit Contact Us (First) Form
 
 This test fills in all the fields (name, email, message and captcha math exercise) of the first form in "Section of Random Stuff", clicks on "Submit" button and verifies "Thanks for contacting us" message is displayed.
+
 
 ### Contributors
 

@@ -1,7 +1,7 @@
 import allure
 import pytest
 from playwright.sync_api import Playwright
-from automation_final_project.ultimateqa.elements import Elements
+from ultimateqa.elements import Elements
 
 EXPECTED_NUM_OF_BUTTONS = 12
 EXPECTED_FACEBOOK_URL = "https://www.facebook.com/Ultimateqa1/"
