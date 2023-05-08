@@ -16,7 +16,12 @@
 git clone https://github.com/tamir-dayan/automation_final_project
 ```
 
-2. Install the required packages.
+2. Create a virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+3. Install the required packages.
 
 ```bash
 pip install -r requirements.txt
